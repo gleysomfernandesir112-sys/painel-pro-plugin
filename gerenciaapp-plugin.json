@@ -1,0 +1,55 @@
+{
+  "id": "gerenciaapp",
+  "name": "Parceria GerenciaApp (Multi-Apps)",
+  "version": "1.0.0",
+  "author": "SSMedia Oficial",
+  "description": "Integração automática via sessão Inertia.js com o GerenciaApp (IBO Revenda, Gerencia Max, Facilita, GPC Pro, IBONEW). Habilita ativação por MAC no Painel PRO.",
+  "source_url": "https://raw.githubusercontent.com/gleysomfernandesir112-sys/painel-pro-plugin/main/gerenciaapp-plugin.json",
+  "settings_schema": [
+    {
+      "key": "base_url",
+      "label": "URL do Painel GerenciaApp",
+      "type": "url",
+      "default": "https://gerenciaapp.top",
+      "placeholder": "https://gerenciaapp.top",
+      "hint": "Endereço do painel GerenciaApp"
+    },
+    {
+      "key": "email",
+      "label": "E-mail (Login) no GerenciaApp",
+      "type": "text",
+      "default": "",
+      "placeholder": "suporte@seudominio.com",
+      "hint": "Seu e-mail de acesso ao GerenciaApp"
+    },
+    {
+      "key": "password",
+      "label": "Senha de Acesso no GerenciaApp",
+      "type": "password",
+      "default": "",
+      "placeholder": "Sua senha do GerenciaApp",
+      "hint": "Usada pelo backend para autenticar via CSRF + Inertia.js"
+    },
+    {
+      "key": "default_dns",
+      "label": "DNS Padrão para Injeção na Lista",
+      "type": "text",
+      "default": "http://fastcdn.fit",
+      "placeholder": "http://fastcdn.fit",
+      "hint": "DNS que será injetado nos aplicativos dos clientes"
+    },
+    {
+      "key": "default_list_title",
+      "label": "Nome da Lista Exibido na TV",
+      "type": "text",
+      "default": "FAST TV",
+      "placeholder": "FAST TV",
+      "hint": "Título amigável da playlist no aplicativo do cliente"
+    }
+  ],
+  "settings": {
+    "base_url": "https://gerenciaapp.top",
+    "default_dns": "http://fastcdn.fit",
+    "default_list_title": "FAST TV"
+  }
+}

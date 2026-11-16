@@ -1,0 +1,29 @@
+{
+  "id": "maxplayer",
+  "name": "Parceria Max Player",
+  "version": "1.0.0",
+  "author": "SSMedia Oficial",
+  "description": "Integração oficial com a API Pública Max Player (api.maxplayer.tv). Ativa a criação de usuários e testes de 3 dias no Painel PRO.",
+  "source_url": "https://raw.githubusercontent.com/gleysomfernandesir112-sys/painel-pro-plugin/main/maxplayer-plugin.json",
+  "settings_schema": [
+    {
+      "key": "api_key",
+      "label": "Chave de API (Api-Token) do Max Player",
+      "type": "password",
+      "default": "",
+      "placeholder": "Cole aqui sua Api-Token do Max Player",
+      "hint": "Obtida no painel de revendedor Max Player (api.maxplayer.tv)"
+    },
+    {
+      "key": "default_domain",
+      "label": "Domínio DNS Padrão no Max Player",
+      "type": "text",
+      "default": "fastcdn.fit",
+      "placeholder": "Ex: fastcdn.fit",
+      "hint": "Domínio vinculado à sua conta no Max Player"
+    }
+  ],
+  "settings": {
+    "default_domain": "fastcdn.fit"
+  }
+}

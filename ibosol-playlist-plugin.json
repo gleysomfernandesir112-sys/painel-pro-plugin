@@ -1,0 +1,56 @@
+{
+  "id": "ibosol-playlist",
+  "name": "IBOSOL — Envio de Playlist p/ TV",
+  "version": "1.0.0",
+  "author": "SSMedia Oficial",
+  "description": "Envia e protege playlists (XC/M3U com PIN 0000) diretamente para a TV do cliente nos 24 apps da família IBOSOL (sem ativar licença paga).",
+  "source_url": "https://raw.githubusercontent.com/gleysomfernandesir112-sys/painel-pro-plugin/main/ibosol-playlist-plugin.json",
+  "settings_schema": [
+    {
+      "key": "api_token",
+      "label": "Token Bearer da Conta IBOSOL (Isolado por Painel/Usuário)",
+      "type": "password",
+      "default": "",
+      "placeholder": "eyJ... (Token Bearer da sua conta IBOSOL)",
+      "hint": "Se preenchido, envia direto para backend-apis.ibosol.com com os dados exclusivos da sua conta"
+    },
+    {
+      "key": "bridge_url",
+      "label": "URL do Bridge IBOSOL (Opcional)",
+      "type": "url",
+      "default": "http://137.131.166.160:3456",
+      "placeholder": "http://137.131.166.160:3456",
+      "hint": "Usado caso o campo Token Bearer acima esteja vazio"
+    },
+    {
+      "key": "default_dns",
+      "label": "DNS Padrão da Playlist",
+      "type": "text",
+      "default": "http://fastcdn.fit",
+      "placeholder": "http://fastcdn.fit",
+      "hint": "DNS enviado na playlist XC/M3U para a TV do cliente"
+    },
+    {
+      "key": "default_playlist_name",
+      "label": "Nome da Playlist na TV",
+      "type": "text",
+      "default": "TV FAST PRO",
+      "placeholder": "TV FAST PRO",
+      "hint": "Nome exibido dentro do aplicativo na Smart TV"
+    },
+    {
+      "key": "default_pin",
+      "label": "PIN de Proteção da Playlist",
+      "type": "text",
+      "default": "0000",
+      "placeholder": "0000",
+      "hint": "PIN numérico para proteger a lista no aplicativo"
+    }
+  ],
+  "settings": {
+    "bridge_url": "http://137.131.166.160:3456",
+    "default_dns": "http://fastcdn.fit",
+    "default_playlist_name": "TV FAST PRO",
+    "default_pin": "0000"
+  }
+}
